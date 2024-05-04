@@ -1,0 +1,25 @@
+#!/usr/bin/env bash
+
+# Prompt for user name and email
+read -p "Enter your full name: " user_name
+read -p "Enter your email: " user_email
+
+# Set global Git configurations
+git config --global color.branch true
+git config --global color.diff true
+git config --global color.interactive true
+git config --global color.status true
+git config --global color.ui true
+git config --global core.pager less
+git config --global credential.helper osxkeychain
+git config --global init.defaultbranch main
+git config --global pager.log false
+git config --global pull.ff only
+git config --global pull.rebase false
+git config --global push.default simple
+git config --global user.name "$user_name"
+git config --global user.email "$user_email"
+
+# List all global Git configurations
+git config --global --list
+

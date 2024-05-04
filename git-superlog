@@ -1,0 +1,2 @@
+#!/usr/bin/env dash
+find "${@:-.}" -type d -name .git -execdir bash -c 'git log --all --pretty="tformat:%aI ["$(basename "$PWD")"] ["$(printf "\x1b[33m")"%h"$(printf "\x1b[39m")"] [%s] [@%aN]"' \; | sort -r

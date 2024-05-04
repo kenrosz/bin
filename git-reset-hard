@@ -1,0 +1,6 @@
+#!/usr/bin/env bash
+if git-origin && confirm "Discard ALL local changes and untracked files? [y/N]"; then
+    git reset -q --hard HEAD
+    git clean -xffd
+    git pull -q
+fi

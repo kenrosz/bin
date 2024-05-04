@@ -1,0 +1,2 @@
+#!/usr/bin/env bash
+confirm && find "${@:-.}" -type d -name .git -execdir git-pull \;
