@@ -1,0 +1,14 @@
+#!/usr/bin/env bash
+
+printf " 🇺🇸  Honolulu    $(env TZ="Pacific/Honolulu" date +'%a %l:%M %P  %z %Z')\n"
+printf " 🇺🇸  Los Angeles $(env TZ="America/Los_Angeles" date +'%a %l:%M %P  %z %Z')\n"
+printf " 🇺🇸  Mountain    $(env TZ="US/Mountain" date +'%a %l:%M %P  %z %Z')\n"
+printf " 🇺🇸  Chicago     $(env TZ="America/Chicago" date +'%a %l:%M %P  %z %Z')\n"
+printf " 🇺🇸  Miami       $(env TZ="America/New_York" date +'%a %l:%M %P  %z %Z')\n"
+printf " 🏳️  \x1b[34mUTC         $(date -u +'%a %l:%M %P  %z %Z')\x1b[0m\n"
+printf " 🇬🇧  London      $(env TZ="Europe/London" date +'%a %l:%M %P  %z %Z')\n"
+printf " 🇨🇭  Zurich      $(env TZ="Europe/Zurich" date +'%a %l:%M %P  %z %Z')\n"
+printf " 🇭🇰  Hong Kong   $(env TZ="Asia/Hong_Kong" date +'%a %l:%M %P  %z %Z')\n"
+printf " 🇸🇬  Singapore   $(env TZ="Asia/Singapore" date +'%a %l:%M %P  %z %Z')\n"
+printf " 🇯🇵  Tokyo       $(env TZ="Asia/Tokyo" date +'%a %l:%M %P  %z %Z')\n"
+printf " 🇦🇺  Sydney      $(env TZ="Australia/Sydney" date +'%a %l:%M %P  %z %Z')\n"
